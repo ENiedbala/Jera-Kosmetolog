@@ -1,0 +1,735 @@
+Body {
+	background-color: #f8f6ec;
+	margin: 0 !important;
+	padding: 0 !important;
+	text-align: center;
+	font-size: 18px;
+	color: #0d0a08;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5em;
+	box-sizing: border-box;
+}
+.container {
+	/* width: 100vw; */
+	height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+.container p {
+	text-align: start;
+}
+.photo-header {
+	width: 100%;
+	height: 400px;
+	background-image: url('zdj/header2111.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: 'Cormorant Upright', serif;
+	margin: 0;
+	line-height: 1.2em;
+	color: #241103;
+	text-shadow: 1px 1px 2px pink;
+	background-color: #f3e6d075;
+}
+h2 {
+	font-family: 'Cormorant Upright', serif;
+	font-size: 40px;
+	line-height: 1.5em;
+	color: #241103;
+	text-shadow: 1px 1px 2px pink;
+	text-align: center;
+}
+nav {
+	position: sticky;
+	top: 0;
+	height: 100px;
+	font-family: 'Cormorant Upright', serif;
+	background-color: #f8f6ec;
+}
+menu {
+	height: 150px;
+}
+ol {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: auto;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	padding: 0;
+	margin: 0;
+}
+ol a {
+	text-decoration: none;
+	color: #241103;
+	width: 100%;
+	height: 100%;
+}
+ol > li {
+	list-style-type: none;
+	position: relative;
+	transition: font-size 0.2s;
+}
+ol > li:hover {
+	border-radius: 3px;
+	box-shadow: 0px 0px 2px 0px #c9a99469;
+	font-size: 20px;
+}
+.logo {
+	width: 115px;
+}
+.logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+ol > li > ul {
+	display: none;
+	list-style-type: none;
+	text-decoration: none;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	box-shadow: 0px 0px 15px 0px #2e170467;
+	border-radius: 4px;
+	font-size: 18px;
+}
+ol > li a:focus + ul,
+ol > li a:hover + ul,
+ol > li > ul:hover {
+	display: block;
+}
+ol > li > ul > li {
+	background-color: #fffffd;
+	position: relative;
+	list-style-type: none;
+	z-index: 100;
+	width: 140px;
+	padding: 8px 0 8px 0;
+	border-radius: 4px;
+	line-height: 1.2em;
+	transition: background-color 0.2s, font-size 0.1s;
+}
+
+ol > li > ul > li:hover {
+	background-color: #ece2ce;
+	font-size: 20px;
+}
+ol > #offer {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+ol > #aboutMe {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+ol > #logo {
+	grid-column: 2/3;
+	grid-row: 1/3;
+}
+ol > #gift {
+	grid-column: 3/4;
+	grid-row: 1/2;
+}
+ol > #contact {
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+@media screen and (min-width: 700px) {
+	.menu ol {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	ol > #offer {
+		grid-column: 1/2;
+		grid-row: 1/3;
+	}
+	ol > #aboutMe {
+		grid-column: 2/3;
+		grid-row: 1/3;
+	}
+	ol > #logo {
+		grid-column: 3/4;
+		grid-row: 1/3;
+	}
+	ol > #gift {
+		grid-column: 4/5;
+		grid-row: 1/3;
+	}
+	ol > #contact {
+		grid-column: 5/6;
+		grid-row: 1/3;
+	}
+	h1 {
+		font-size: 58px;
+		margin-right: 50px;
+		line-height: 1.5em;
+		color: #241103;
+		text-shadow: 1px 1px 2px pink;
+		text-align: center;
+		background-color: #f3e6d000;
+	}
+	.photo-header {
+		justify-content: end;
+		align-items: start;
+		height: 550px;
+	}
+}
+
+.intro {
+	margin: 50px 20px 50px 20px;
+	grid-column: 1/13;
+}
+@media screen and (min-width: 700px) {
+	.intro {
+		margin: 50px 200px;
+	}
+}
+/* podstrona makijaż permanentny */
+.main {
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	margin: 0 auto;
+}
+.permanent {
+	max-width: 90vw;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	row-gap: 3.5em;
+	column-gap: 1em;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	margin: 25px 0;
+
+	grid-template-areas:
+		'content1 content1 content1 content1 content1 content1'
+		'photo2 photo2 photo2 photo2 photo2 photo2'
+		'content2 content2 content2 content2 content2 content2'
+		'photo3 photo3 photo3 photo3 photo3 photo3'
+		'content3 content3 content3 content3 content3 content3'
+		'left left left left left left'
+		'right right right right right right'
+		' . . FBlink FBlink. .';
+}
+.permanent div {
+	align-items: center;
+	max-width: fit-content;
+	max-height: max-content;
+}
+.definiton-content {
+	grid-area: content1;
+	margin: 0 15px;
+}
+
+.pigment-content {
+	grid-area: content2;
+	margin: 0 15px;
+}
+.pigment-photo {
+	grid-area: photo2;
+	height: auto;
+}
+.pigmentways-photo {
+	grid-area: photo3;
+}
+.pigmentways-content {
+	grid-area: content3;
+	margin: 0 15px;
+}
+.left-side {
+	grid-area: left;
+	border-top: 1px solid black;
+	align-self: stretch;
+	justify-self: left;
+	margin: 0 10px;
+}
+
+.right-side {
+	grid-area: right;
+	border-bottom: 1px solid black;
+	align-self: stretch;
+	margin: 0 10px;
+}
+
+.permanent img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+
+.permanent h2 {
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.FBlink {
+	grid-column: 2/6;
+	display: grid;
+	grid-template-rows: 1fr 1fr 2fr;
+
+	justify-items: center;
+	color: #180606;
+	font-size: 28px;
+	min-height: 100px;
+	line-height: 1.5;
+}
+.FBlink img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+.button a {
+	text-decoration: none;
+	color: rgb(29, 19, 1);
+	display: block;
+	font-size: 28px;
+}
+.button a:hover {
+	color: #311706;
+	/* text-shadow: 1px 1px 4px rgb(243, 96, 120); */
+}
+.button {
+	width: 180px;
+	height: 60px;
+	padding: 0;
+	margin-top: 4em;
+	border: none;
+	position: absolute;
+	font-family: 'Cormorant Upright', serif;
+	background: content-box radial-gradient(#e4ddd6fd, #e6935bc9);
+	box-shadow: 10px 8px 30px -15px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	z-index: 1;
+	overflow: hidden;
+	cursor: pointer;
+}
+span:nth-child(1) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to right, #e4ddd6fd, #8a0303);
+	animation: animate1 3s linear infinite;
+	animation-delay: 2s;
+}
+
+@keyframes animate1 {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to left, #fabd9ff5, #8a0303);
+	animation: animate3 3s linear infinite;
+	animation-delay: 2s;
+}
+@keyframes animate3 {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+button:hover {
+	background: content-box radial-gradient(#e6935bc9, #e4ddd6fd);
+	margin-top: 5em;
+	padding: 0;
+}
+@media screen and (min-width: 700px) {
+	.permanent {
+		grid-template-areas:
+			'. content1 content1 content1 content1 . '
+			'content2 content2 content2 photo2 photo2 photo2'
+			' photo3 photo3 photo3 content3 content3 content3'
+			'left left left right right right'
+			' . . FBlink FBlink. .';
+	}
+}
+
+/* JAPOŃSKI MASAŻ LIFTINGUJĄCY */
+
+.japan-lifting-massage {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1em;
+	align-items: center;
+}
+.japan-lifting-massage h2 {
+	grid-column: 1/3;
+	font-size: 28px;
+	margin: 30px 20px 20px 20px;
+	padding: 0;
+	text-align: center;
+	align-items: center;
+}
+.opis {
+	grid-column: 1/3;
+	margin: 20px;
+	height: auto;
+	align-items: center;
+	align-content: center;
+}
+.galery {
+	grid-column: 1/3;
+	display: grid;
+	margin: 20px 0;
+	gap: 0.2em;
+	justify-content: center;
+	justify-items: center;
+}
+.galery img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#masgallery1 {
+	grid-column: 1/2;
+	grid-row: 1/5;
+}
+#masgallery2 {
+	grid-column: 2/3;
+	grid-row: 1/3;
+}
+#masgallery3 {
+	grid-column: 2/3;
+	grid-row: 3/5;
+}
+#masgallery4 {
+	grid-column: 3/4;
+	grid-row: 1/2;
+}
+#masgallery5 {
+	grid-column: 3/4;
+	grid-row: 2/5;
+}
+@media screen and (min-width: 700px) {
+	.japan-lifting-massage {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1em;
+		align-items: center;
+	}
+	.japan-lifting-massage h2 {
+		grid-column: 2/4;
+		font-size: 40px;
+		margin-top: 50px;
+	}
+	.opis {
+		grid-column: 2/4;
+		margin: 0 0 20px 0;
+		height: auto;
+		align-items: center;
+		align-content: center;
+	}
+	.galery {
+		grid-column: 2/4;
+		margin: 20px 0 50px 0;
+	}
+}
+
+.tybetan-ritual {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1em;
+	align-items: center;
+}
+
+.tybetan-ritual h2 {
+	grid-column: 1/3;
+	font-size: 28px;
+	margin: 20px;
+	padding: 0;
+	text-align: center;
+	align-items: center;
+}
+.tybetan-ritual .opis {
+	grid-column: 1/3;
+	height: auto;
+	margin: 20px;
+}
+.tybetan_galery {
+	grid-column: 1/3;
+	display: grid;
+	margin: 20px 0;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.2em;
+	justify-content: center;
+	justify-items: center;
+}
+
+.tybetan_galery img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#tybgallery1 {
+	grid-column: 1/3;
+	grid-row: 1/3;
+}
+#tybgallery2 {
+	grid-column: 3/5;
+	grid-row: 1/3;
+}
+#tybgallery3 {
+	grid-column: 1/2;
+	grid-row: 3/5;
+}
+#tybgallery4 {
+	grid-column: 2/3;
+	grid-row: 3/5;
+}
+#tybgallery5 {
+	grid-column: 3/5;
+	grid-row: 3/5;
+}
+@media screen and (min-width: 700px) {
+	.tybetan-ritual {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1em;
+		align-items: center;
+	}
+	.tybetan-ritual h2 {
+		grid-column: 2/4;
+		font-size: 40px;
+		margin: 50px 0 0px 0;
+	}
+	.tybetan-ritual .opis {
+		grid-column: 2/4;
+		margin: 0px 0px 20px 0;
+	}
+	.tybetan_galery {
+		grid-column: 2/4;
+		margin: 20px 0px 50px 0;
+	}
+}
+
+/* MASAŻE */
+
+.massage {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1em;
+	align-items: center;
+}
+.massage h2 {
+	grid-column: 1/3;
+	font-size: 28px;
+	margin: 20px 0;
+	padding: 0;
+	text-align: center;
+	align-items: center;
+}
+.aboutMassage {
+	grid-column: 1/3;
+	padding: 0;
+	margin: 0 20px;
+	text-align: start;
+	align-items: center;
+}
+.masage_galery {
+	grid-column: 1/3;
+	margin: 20px 0;
+}
+.masage_galery img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+@media screen and (min-width: 700px) {
+	.massage {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1em;
+	}
+	.massage h2 {
+		grid-column: 2/4;
+		font-size: 40px;
+		margin: 50px 0 0 0;
+	}
+	.aboutMassage {
+		grid-column: 2/4;
+		margin: 20px 0;
+	}
+	.masage_galery {
+		grid-column: 2/4;
+		margin: 0 0 50px 0;
+	}
+}
+
+.aboutme {
+	display: grid;
+	width: 80vw;
+	grid-template-columns: 1fr 1fr;
+	align-content: center;
+	align-items: center;
+}
+.aboutme p {
+	grid-column: 1/3;
+}
+.aboutme h2 {
+	grid-column: 1/3;
+	font-size: 28px;
+}
+.mephoto {
+	grid-column: 1/3;
+
+	margin: 20px;
+}
+.aboutme img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 4px 5px 40px -10px rgba(54, 45, 31, 0.267);
+}
+
+@media screen and (min-width: 700px) {
+	.aboutme {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.aboutme p {
+		grid-column: 2/4;
+	}
+	.aboutme h2 {
+		grid-column: 2/4;
+		font-size: 40px;
+		margin-top: 50px;
+	}
+	.mephoto {
+		grid-column: 2/4;
+		margin-bottom: 50px;
+	}
+	.aboutme img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 5px;
+		box-shadow: 4px 5px 40px -10px rgba(54, 45, 31, 0.267);
+	}
+}
+
+.gift {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: auto;
+	gap: 2em;
+	padding: 20px;
+	margin: 20px 0;
+}
+.giftInfo {
+	grid-column: 1/5;
+	padding: 5px;
+}
+.gift_photo {
+	grid-column: 1/5;
+	margin: auto;
+}
+.gift img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 4px 5px 40px -10px rgba(54, 45, 31, 0.267);
+}
+.giftRegulamin {
+	grid-column: 1/5;
+}
+.gift p {
+	grid-column: 1/5;
+}
+@media screen and (min-width: 700px) {
+	.gift {
+		grid-template-columns: repeat(6, 1fr);
+		margin: 50px 0;
+	}
+	.giftInfo {
+		grid-column: 2/6;
+		box-shadow: 4px 5px 40px -10px rgba(54, 45, 31, 0.267);
+		padding: 10px;
+	}
+	.gift_photo {
+		grid-column: 1/7;
+		margin: auto;
+	}
+	.giftRegulamin {
+		grid-column: 2/6;
+	}
+}
+main {
+	display: inline-block;
+}
+.contact {
+	width: 80vw;
+	margin: 50px;
+	box-shadow: 14px 15px 40px -10px rgba(54, 45, 31, 0.267);
+}
+.contactDane {
+	margin-bottom: 50px;
+	display: inline-block;
+}
+.maps {
+	padding-bottom: 50px;
+}
+iframe {
+	max-width: 290px;
+}
+footer {
+	background-color: #f7ece1;
+	color: #180606;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: auto;
+}
+@media screen and (min-width: 700px) {
+	iframe {
+		max-width: 600px;
+	}
+}
+.icon-facebook-squared {
+	color: #1e90ff;
+	cursor: pointer;
+}
+@media (min-width: 760px) {
+	.footer {
+		flex-direction: row;
+	}
+}
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	flex-basis: 15vh;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: row;
+}
+
+#create {
+	font-size: 12px;
+}

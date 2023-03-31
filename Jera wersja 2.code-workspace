@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../Jera wersja 2"
+		},
+		{
+			"path": "../Jera wersja 1"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../programowanie/JavaScript"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Jera wersja 3"
+	}
+}
